@@ -1,3 +1,5 @@
+"""Trečia testo užduotis."""
+
 # Duotas "audi" žodynas.
 
 # Parašykite funkciją "get_dict_values", kuri:
@@ -17,9 +19,9 @@ audi = {
 
 # funkcija "get_dict_values"
 def get_dict_values(all):
-  """Grąžina sąrašą su visomis jo reikšmėmis (values)"""
+  """Grąžina sąrašą su visomis jo reikšmėmis (values)."""
 
-  result = all.values()
+  result = list(all.values())
 
   return result
 
