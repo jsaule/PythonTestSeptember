@@ -1,3 +1,4 @@
+from concurrent.futures import ProcessPoolExecutor
 import pprint
 
 # Duotas "users" sąrašas.
@@ -26,3 +27,37 @@ users = [
   { 'id': '8', 'name': 'Simon Peterson', 'age': 30 },
   { 'id': '9', 'name': 'Daniel Cane', 'age': 51 },
 ]
+
+# 1. funkcija "get_user_average_age"
+def get_user_average_age(people):
+    """GrąžinA visų vartotojų amžiaus vidurkį kaip skaičių, suapvalintą iki artimiausio sveikojo skaičiaus"""
+    
+    avg = 0    
+  
+    for person in people:
+      if person['age']:
+        avg += person['age'] / len(people)
+
+    return round(avg)
+
+# 2. funkcija "get_users_names"
+def get_users_names(persons):
+   """Grąžina sąrašą su visų vartotojų vardais, išrikiuotais abėcėlės tvarka"""
+
+   name_list = [persons['name'] for persons in persons if persons['name']]
+
+   sorted_list = sorted(name_list)
+   
+   return sorted_list
+   
+
+################################ TEST ################################
+
+print(" Test: 1. funkcija 'get_user_average_age'")
+average_age = get_user_average_age(users)
+print(average_age)
+
+print("\n","Test: 2. funkcija 'get_users_names'")
+names = get_users_names(users)
+print(names)
+
