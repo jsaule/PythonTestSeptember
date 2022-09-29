@@ -1,3 +1,5 @@
+"""Pirma testo užduotis."""
+
 # Duotas "users" sąrašas.
 
 # Parašykite dvi funkcijas, kurios:
@@ -29,7 +31,7 @@ users = [
 
 # 1. funkcija "filter_all_or_nothing_people"
 def filter_all_or_nothing_people(people):
-    """grąžina sąrašą vartotojų, kurie arba neturi naminių gyvūnų visiškai, arba turi ir šunį, ir katę"""
+    """Grąžina sąrašą vartotojų, kurie arba neturi naminių gyvūnų visiškai, arba turi ir šunį, ir katę."""
 
     res = []
     for aon in people:
@@ -40,7 +42,7 @@ def filter_all_or_nothing_people(people):
 
 # 2. funkcija "filter_underaged_owners"
 def filter_underaged_owners(owners):
-    """grąžina sąrašą vartotojų, kurie dar nėra pilnamečiai, bet jau turi bent vieną naminį gyvūną"""
+    """Grąžina sąrašą vartotojų, kurie dar nėra pilnamečiai, bet jau turi bent vieną naminį gyvūną."""
 
     res = []
     for fuo in owners:
