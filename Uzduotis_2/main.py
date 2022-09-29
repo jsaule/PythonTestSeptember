@@ -1,5 +1,4 @@
-from concurrent.futures import ProcessPoolExecutor
-import pprint
+"""Antra testo užduotis."""
 
 # Duotas "users" sąrašas.
 
@@ -43,9 +42,8 @@ def get_user_average_age(people):
 # 2. funkcija "get_users_names"
 def get_users_names(persons):
    """Grąžina sąrašą su visų vartotojų vardais, išrikiuotais abėcėlės tvarka"""
-
+   
    name_list = [persons['name'] for persons in persons if persons['name']]
-
    sorted_list = sorted(name_list)
    
    return sorted_list
