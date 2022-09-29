@@ -1,3 +1,5 @@
+"""Ketvirta testo užduotis."""
+
 # Sukurkite filmų klasę "Movie", kuri:
 # * Turės klasės lygio 'docstring' tipo komentarą, trumpai aprašantį, kas tai
 #   per klasė.
@@ -18,7 +20,7 @@
 
 # klasė "Movie"
 class Movie:
-    """Klasė sukuria objektus, turinčius 3 savybes (title, director, budget) ir vieną metodą"""
+    """Klasė sukuria objektus, turinčius 3 savybes (title, director, budget) ir vieną metodą."""
 
     def __init__(self, title, director, budget):
         """Metodas priskiria argumentus parametrams"""
@@ -33,11 +35,15 @@ class Movie:
 # objektas 1
 movie_one = Movie("The Matrix", "Wachowski", 63000000)
 
-print(movie_one.title)
-print(movie_one.was_expensive())
-
 # objektas 2
 movie_two = Movie("Westworld", "Nolan", 295000000)
 
+################################ TEST ################################
+
+print(" Test: objektas 1'")
+print(movie_one.title)
+print(movie_one.was_expensive())
+
+print("\n","Test: objektas 2'")
 print(movie_two.title)
 print(movie_two.was_expensive())
