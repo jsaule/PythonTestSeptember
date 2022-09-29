@@ -1,3 +1,5 @@
+"""Penkta testo užduotis."""
+
 # Importuokite reikiamus modulius, kad veiktų žemiau nurodytos funkcijos:
 
 # Kitų failų ir žemiau esančio kodo nekeiskite
