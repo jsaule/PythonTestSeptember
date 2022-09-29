@@ -21,9 +21,9 @@ audi = {
 def get_dict_values(all):
   """Grąžina sąrašą su visomis jo reikšmėmis (values)."""
 
-  result = list(all.values())
+  return list(all.values())
 
-  return result
+
 
 ################################ TEST ################################
 
